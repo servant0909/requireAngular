@@ -1,0 +1,93 @@
+﻿/**
+*  @media,适配不同页面布局结构
+*/
+
+body {
+}
+
+@media screen and (max-width:4360px) {
+    #map,
+    #title,
+    #functionlist,
+    #userinfo,
+    #accordion {
+        position: fixed;
+    }
+
+    #map {
+        width: 100%;
+        height: 100%;
+    }
+
+    #title,
+    #functionlist,
+    #userinfo {
+        z-index: 999;
+    }
+
+    #title {
+        position: fixed;
+        margin: 10px 0px 0px 10px;
+        font-size: 1.5em;
+    }
+
+    #functionlist {
+        top: 2%;
+        right: 5%;
+    }
+
+        #functionlist ul {
+            list-style-type: none;
+        }
+
+            #functionlist ul li {
+                float: left;
+                font-size: 1.2em;
+            }
+
+                #functionlist ul li button {
+                    width: 65px;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                }
+    #user div {
+        padding-top:20px;
+        width:100%;
+    }
+    #btnLogin {
+
+    }
+    #userinfo {
+        top: 2%;
+        right: 1.5%;
+    }
+
+        #userinfo img {
+            width: 70px;
+            height: 70px;
+        }
+    #userLogin {
+        width:380px;
+        background-color:#ffffff;
+        padding:30px 50px;
+        top:200px;
+        margin:0 auto;
+        border-radius:15px;
+        -webkit-border-radius:15px;
+        -moz-border-radius:15px;
+    }
+        #userLogin #btnLogin {
+            margin-top:20px;
+        }
+            #userLogin #btnLogin div.btnlogin {
+                width:100%;
+            }
+    #loginModal {
+        z-index:9999
+    }
+}
+
+@media screen and (max-width:1275px) {
+}
+
+@media screen and (max-width:450px) {
+}
